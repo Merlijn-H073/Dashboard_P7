@@ -36,7 +36,7 @@ def info_page():
         
         Het dashboard biedt twee weergaven:
         1. **Beginner**: Eenvoudige visualisaties van de belangrijkste gezondheidsmetrieken
-        2. **Geavanceerd**: Uitgebreide analyses en meer gedetailleerde grafieken
+        2. **Geavanceerd**: Uitgebreidere analyses en meer gedetailleerde grafieken
         """)
 
         st.subheader("Hoe te Gebruiken")
@@ -44,7 +44,7 @@ def info_page():
         1. **Voorbereiding**:
            - Doe een meting met de hartslagsensor
            - Exporteer de data naar een .csv of .txt bestand
-           - Upload het bestand via het menu in de sidebar
+           - Upload het bestand via het menu in de zijbalk
         
         2. **Persoonlijke Instellingen**:
            - Vul uw leeftijd in voor nauwkeurige hartslagzoneberekeningen
@@ -214,7 +214,7 @@ def info_page():
         **Dagelijks stappendoel: 10.000 stappen**
         
         Classificatie van activiteitsniveaus:
-        - Sedentair: < 5.000 stappen
+        - Nauwelijks actief: < 5.000 stappen
         - Licht actief: 5.000-7.499 stappen
         - Redelijk actief: 7.500-9.999 stappen
         - Actief: 10.000-12.499 stappen

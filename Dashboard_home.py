@@ -171,7 +171,7 @@ def homepage():
     
     3. **Kies uw weergave:**
        - **Beginner**: Eenvoudige weergave met basis hartgezondheidsmetrieken
-       - **Geavanceerd**: Gedetailleerde analyses en extra grafieken
+       - **Geavanceerd**: Gedetailleerdere analyses en extra grafieken
     """)
              
     st.subheader("Wat kunt u hier doen?")   
@@ -181,21 +181,25 @@ def homepage():
     - Volg uw bewegingen zoals stappen, traplopen en herstelmomenten.
     - Visualiseer trends in hartfunctie gekoppeld aan dagelijkse activiteiten.
     
-    Het doel van dit dashboard is om u te ondersteunen bij het verkrijgen van meer grip
-    op uw gezondheid. Door patronen in inspanning en herstel te herkennen, 
+    Het doel van dit dashboard is om u te ondersteunen bij  meer grip
+    op uw gezondheid te krijgen. Door patronen in inspanning en herstel te herkennen, 
     kunt u beter begrijpen hoe uw lichaam reageert op stress en beweging.
     """)
     
     st.write("Kies of u de beginner versie of de geavanceerde versie wilt met de knoppen hieronder.")
-    st.write("U kunt de keuze altijd nog veranderen in de sidebar")
+    st.write("U kunt de keuze altijd nog veranderen in de zijbalk")
+    st.write("Als u uitgebreidere informatie wilt over hoe het dashboard achter de schermen werkt en wat het precies meet en hoe de berekeningen gedaan worden, dan kunt u op informatie klikken.")
     
-    col1, col2 = st.columns(2)
+    col1, col2, col3 = st.columns(3)
     with col1:
         if st.button("Beginner"):
             st.switch_page("pages/beginner.py")
     with col2:
         if st.button("Geavanceerd"):
             st.switch_page("pages/Advanced.py")
+    with col3:
+        if st.button("Informatie"):
+            st.switch_page("pages/info.py")
     
     # Disclaimer onderaan de pagina
     st.divider()

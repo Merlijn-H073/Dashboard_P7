@@ -306,13 +306,13 @@ with col1:
 Wat laat het zien:
 De RMSSD (Root Mean Square of Successive Differences) is een maat voor de variatie in tijd tussen opeenvolgende hartslagen. Hier wordt het per minuut gevisualiseerd.
 
-Wat betekend dit:
+Wat betekent dit:
 RMSSD is een indicator voor parasympathische activiteit (ontspanningszenuwstelsel). 
 Omdat dit een indicator is voor het parasympathische zenuwstelsel geeft deze alleen acurate resultaten als er in rust gemeten is.
 
-**Hoge RMSSD** = betere stressregulatie, rustiger autonoom zenuwstelsel.
+**Hoge RMSSD** = betere stressregulatie en rustiger autonoom zenuwstelsel.
 
-**Lage RMSSD** = verhoogde stress, vermoeidheid of verminderde cardiovasculaire flexibiliteit.
+**Lage RMSSD** = verhoogde stress en vermoeidheid of verminderde cardiovasculaire flexibiliteit.
 
 Belangrijk bij het beoordelen van stressniveau, herstel na inspanning, of algemene hartgezondheid.
 
@@ -334,10 +334,10 @@ with col2:
 Wat laat het zien:
 De standaarddeviatie van alle RR-intervallen in een minuut. Dit is een globale maat voor hartslagvariatie.
 
-Wat betekend dit:
-SDNN is een algemene HRV-indicator.
+Wat betekent dit:
+SDNN is een algemene HRV-indicator (in tegenstelling tot de RMSSD die alleen een maat is voor het parasympathisch zenuwstelsel).
 
-Hoge SDNN = gezonde balans tussen stress en herstel, veerkrachtig autonoom zenuwstelsel.
+Hoge SDNN = gezonde balans tussen stress en herstel en veerkrachtig autonoom zenuwstelsel.
 
 Lage SDNN = vaak geassocieerd met chronische stress, burn-out, of hartproblemen.
 
@@ -355,7 +355,7 @@ with col3:
         with st.expander("ℹ️ Uitleg over de grafiek"):
             st.subheader("de RMSSD-stressscore")
             st.write("""
-                     Wat laat deze grafiek zien?
+                     Wat laat het zien:
 Deze grafiek geeft een samenvattende stressscore op basis van uw hartslagvariabiliteit (HRV), gemeten via de RMSSD-waarde. Hoe lager de variatie tussen uw hartslagen, hoe hoger de stressscore.
 
 Hoe werkt het?
@@ -368,11 +368,11 @@ Uw HRV wordt omgerekend naar een stressscore tussen 0 en 100.
 
 Wat betekent dit voor u?
 
-Lage stressscore (0–30): U bent ontspannen. Uw lichaam is goed in balans.
+**Lage stressscore** (0–30): U bent ontspannen. Uw lichaam is goed in balans.
 
-Gemiddelde stressscore (30–70): U bevindt zich in een normaal spanningsniveau. Mogelijk enige mentale of fysieke activiteit.
+**Gemiddelde stressscore** (30–70): U bevindt zich in een normaal spanningsniveau. Mogelijk enige mentale of fysieke activiteit.
 
-Hoge stressscore (70–100): Uw lichaam ervaart spanning. Dit kan wijzen op stress, vermoeidheid of onvoldoende herstel.
+**Hoge stressscore** (70–100): Uw lichaam ervaart spanning. Dit kan wijzen op stress, vermoeidheid of onvoldoende herstel.
 
 *bron: Caring Medical Florida. (2024, 12 juli). Heart rate variability. https://caringmedical.com/hauser-neck-center/heart-rate-variability/*
                     """)
@@ -387,19 +387,19 @@ with col4:
         with st.expander("ℹ️ Uitleg over de grafiek"):
             st.subheader("de HRV-meter (RMSSD Gauge)")
             st.write("""
-Wat laat deze grafiek zien?
+Wat laat het zien:
 Deze meter toont uw hartslagvariabiliteit (HRV) in real-time, gemeten via de RMSSD-waarde. Dat is een maat voor hoe flexibel uw hart reageert op stress en herstel.
 
 Wat betekent dit:
     
-**Hoge waarde (gele zone)**: Uw lichaam is ontspannen, het zenuwstelsel is in balans.
+**Hoge waarde (gele zone)**: Uw lichaam is ontspannen, het parasympathische zenuwstelsel is in balans.
 
-**Gemiddelde waarde (groen/lichtgroen)**: Uw HRV is zoals verwacht. Uw autonome zenuwstelsel werkt normaal.
+**Gemiddelde waarde (groen/lichtgroen)**: Uw HRV is zoals verwacht. Uw parasympathische  zenuwstelsel werkt normaal.
 
 **Lage waarde (oranje of rood)**: Uw hart reageert minder flexibel, wat kan wijzen op stress, vermoeidheid of verminderde herstelcapaciteit.
 
-Zwarte lijn (referentie):
-Dit is uw gemiddelde HRV tijdens deze meting. Het helpt u om te zien of uw huidige waarde hoger of lager ligt dan normaal voor u.
+*Zwarte lijn (referentie)*:
+Dit is uw gemiddelde HRV tijdens de meting. Het helpt u om te zien of uw huidige waarde hoger of lager ligt dan normaal voor u.
 
 *bron: Caring Medical Florida. (2024, 12 juli). Heart rate variability. https://caringmedical.com/hauser-neck-center/heart-rate-variability/*
                      
@@ -474,6 +474,7 @@ with col5:
 In deze grafiek wordt per minuut weergegeven hoe intensief je bewoog, op basis van een combinatie van versnellingsgegevens en hartslag.
 
 - **Grijs (Rust)**: Geen of minimale activiteit
+
 - **Oranje (Matig)**: Je kunt een gesprek voeren, maar niet zingen tijdens het bewegen
   - Bijvoorbeeld: stevig doorwandelen, rustig fietsen
   - Telt 1x mee voor je dagelijkse doel
@@ -511,7 +512,7 @@ with col6:
             **Dagelijks stappendoel: 10.000 stappen**
             
             Verschillende activiteitsniveaus:
-            - Sedentair: < 5.000 stappen
+            - nauwelijks actief: < 5.000 stappen
             - Licht actief: 5.000-7.499 stappen
             - Redelijk actief: 7.500-9.999 stappen
             - Actief: 10.000-12.499 stappen
